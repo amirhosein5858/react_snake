@@ -1,0 +1,111 @@
+.snake{
+    margin-top: 40pt;
+    width: 184pt;
+    display: flex;
+    flex-direction: column;
+}
+
+.snakeBoard{
+    height: 184pt;
+    height: 184pt;
+    background-color: #3a5e00;
+    
+}
+
+.snakeDashboard{
+    height: 30pt;
+    width: 100%;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    background-color: #3a5e00;
+    font-size: 10pt;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+@keyframes snakeBannerAnim {
+    0% {opacity: 1;}
+    90% {opacity: 1;}
+    95% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.snakeBanner{
+    animation: snakeBannerAnim infinite;
+    animation-duration: 3s;
+    display: flex;
+    background-color: #3a5e00;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    height: 60pt;
+    width: 120pt;
+    transform: translate(32pt , 62pt);
+    border: 3px solid #012609;
+}
+
+.bannerText{
+    color: #012609;
+    font-size: 12pt;
+    margin: 3pt;
+    font-weight: 700;
+}
+
+.bannerTextBold{
+    color: #012609;
+    font-size: 16pt;
+    margin: 3pt;
+    font-weight: 800;
+}
+
+.snakeBody {
+    height: 8pt;
+    width: 8pt;
+    background-color: #012609;
+    position: absolute;
+}
+
+@keyframes appleAnimation {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.apple {
+    position: absolute;
+    height: 8pt;
+    width: 8pt;
+    background-color: #012609;
+    border-radius: 20pt;
+    animation: appleAnimation infinite;
+    animation-duration: .5s;
+}
+
+.snakeKeysContainer {
+    margin-top: 10pt;
+    height: 90pt;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.snakeKey {
+    height: 30pt;
+    width: 30pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px solid ;
+}
+
+.sbcolor{
+    background-color: #3d4238;
+}
+
+.midleKeyContainer{
+    display: flex;
+    flex-direction: row;
+}
